@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.background-image {
+    background-image: url("/public/herotea.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: contain;
+    background-size: auto auto;
+}
+
+@media (max-width:720px) {
+    .logo-image {
+        /* width: 250px;
+        height: 400px; */
+    }
+    
+}
+
+.color-bg {
+    background-color: #3b7f83;
+}
