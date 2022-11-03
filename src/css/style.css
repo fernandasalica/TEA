@@ -21,6 +21,19 @@ body {
     
 }
 
-.color-bg {
-    background-color: #3b7f83;
+.primary-color {
+    background-color: #06283D;
+}
+
+.secondary-color {
+    background-color: #A3C7D6;
+}
+
+.letter-color {
+    color: #06283D;
+}
+
+.icons {
+    color: #06283D;
+    font-size: 2rem;
 }
