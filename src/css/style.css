@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.background-image {
+  background-image: url("/public/img/herotea.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  background-size: auto auto;
+}
+
+.bg-footer {
+  background-color: #ecf2ff;
+}
+
+.bg-footer-bottom {
+  background-color: #06283d;
+}
+
+.letter-tittle {
+  color: #0175c4;
+  font-weight: bold;
+}
+
+.icons {
+  color: #06283d;
+  font-size: 25px;
+}
+
+.item-objetive {
+  line-height: 3rem;
+}
+
+.button {
+  background: #ffb100;
+  padding: 15px;
+  font-weight: bold;
+  border: 0;
+}
+
+.button:hover {
+  background: #edf1d6;
+  color: #0175c4;
+}
+
+.menu {
+  color: #06283d;
+}
