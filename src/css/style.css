@@ -4,7 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.background-image {
+.bg-image-hero {
   background-image: url("/public/img/herotea.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,4 +48,9 @@ body {
 
 .menu {
   color: #06283d;
+}
+
+.list-contact {
+  line-height: 50px;
+  list-style: none;
 }

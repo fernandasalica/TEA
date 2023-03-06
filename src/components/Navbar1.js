@@ -25,13 +25,13 @@ const Navbar1 = () => {
               <Nav.Link href="/Autism" className="menu">
                 Autismo
               </Nav.Link>
-              <Nav.Link to="/Autism" className="menu">
+              <Nav.Link href="/News" className="menu">
                 Noticias
               </Nav.Link>
-              <Nav.Link to="/Autism" className="menu">
+              <Nav.Link href="/AboutUs" className="menu">
                 Quiénes somos
               </Nav.Link>
-              <Nav.Link to="/Autism" className="menu">
+              <Nav.Link href="/Contact" className="menu">
                 Contacto
               </Nav.Link>
               <Nav.Link to="/Autism" className="menu">

@@ -13,9 +13,15 @@ const Footer = () => {
                 <Nav.Link href="/Autism" className="menu">
                   Autismo
                 </Nav.Link>
-                <Nav.Link className="menu">Noticias</Nav.Link>
-                <Nav.Link className="menu">Quiénes somos</Nav.Link>
-                <Nav.Link className="menu">Contacto</Nav.Link>
+                <Nav.Link className="menu" href="/News">
+                  Noticias
+                </Nav.Link>
+                <Nav.Link className="menu" href="/AboutUs">
+                  Quiénes somos
+                </Nav.Link>
+                <Nav.Link className="menu" href="/Contact">
+                  Contacto
+                </Nav.Link>
                 <Nav.Link className="menu">Cuenta</Nav.Link>
               </Nav>
             </Col>

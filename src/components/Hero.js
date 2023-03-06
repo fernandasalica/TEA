@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 const Hero = () => {
   return (
     <Card
-      className="border-0 rounded-0 py-5 background-image"
+      className="border-0 rounded-0 py-5 bg-image-hero"
       style={{ height: "35rem" }}
     >
       <Card.Body>
