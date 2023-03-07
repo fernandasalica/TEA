@@ -36,7 +36,9 @@ const NewsList = () => {
             </Card.Body>
             <Card.Footer>
               <div className="d-flex justify-content-between">
-                <Button className="button">Leer más..</Button>
+                <Button className="button" href="/NewDetail">
+                  Leer más..
+                </Button>
                 <Nav.Link href="#link" className="text-muted">
                   4 comentarios
                 </Nav.Link>
@@ -57,7 +59,9 @@ const NewsList = () => {
             </Card.Body>
             <Card.Footer>
               <div className="d-flex justify-content-between">
-                <Button className="button">Leer más..</Button>
+                <Button className="button" href="/NewDetail">
+                  Leer más..
+                </Button>
                 <Nav.Link href="#link" className="text-muted">
                   4 comentarios
                 </Nav.Link>

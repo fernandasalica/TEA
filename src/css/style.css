@@ -54,3 +54,28 @@ body {
   line-height: 50px;
   list-style: none;
 }
+.form {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.form-comments {
+  display: grid;
+}
+
+.comments {
+  width: 35rem;
+  height: 10rem;
+}
+
+.input-comments {
+  width: 20rem;
+  padding: 10px;
+}
+
+@media (max-width: 720px) {
+  .comments {
+    width: 20rem;
+  }
+}

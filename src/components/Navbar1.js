@@ -34,7 +34,7 @@ const Navbar1 = () => {
               <Nav.Link href="/Contact" className="menu">
                 Contacto
               </Nav.Link>
-              <Nav.Link to="/Autism" className="menu">
+              <Nav.Link href="/Login" className="menu">
                 Cuenta
               </Nav.Link>
             </Nav>

@@ -22,7 +22,9 @@ const Footer = () => {
                 <Nav.Link className="menu" href="/Contact">
                   Contacto
                 </Nav.Link>
-                <Nav.Link className="menu">Cuenta</Nav.Link>
+                <Nav.Link className="menu" href="/Login">
+                  Cuenta
+                </Nav.Link>
               </Nav>
             </Col>
             <Col className="text-center py-5 icons">

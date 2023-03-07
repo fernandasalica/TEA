@@ -8,6 +8,9 @@ import { Container } from "react-bootstrap";
 import News from "./pages/News";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import NewDetail from "./components/NewDetail";
 
 const Main = () => {
   return (
@@ -21,6 +24,9 @@ const Main = () => {
           <Route path="/News" element={<News />} />
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Contact" element={<Contact />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Register" element={<Register />} />
+          <Route path="/NewDetail" element={<NewDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
