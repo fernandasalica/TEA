@@ -1,10 +1,10 @@
-import NewsList from "../components/NewsList";
+import ListNewsApi from "../components/ListNewsApi";
 
 const News = () => {
   return (
     <>
       <img src="./img/news.jpg"></img>
-      <NewsList />
+      <ListNewsApi />
     </>
   );
 };

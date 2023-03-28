@@ -1,14 +1,14 @@
 import Hero from "../components/Hero";
 import OurObjetive from "../components/OurObjetive";
 import MoreInformation from "../components/MoreInformation";
-import NewsList from "../components/NewsList";
+import ListNewsApi from "../components/ListNewsApi";
 
 const Landing = () => {
   return (
     <>
       <Hero />
       <OurObjetive />
-      <NewsList />
+      <ListNewsApi />
       <MoreInformation />
     </>
   );
