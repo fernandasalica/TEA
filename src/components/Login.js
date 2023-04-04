@@ -3,14 +3,16 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
+  const [data, setData] = useState([]);
 
-  const Submit = () => {
-    const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     fetch("http://localhost:3001/user/login", {
       method: "POST",
       headers: {
@@ -21,10 +23,21 @@ const Login = () => {
         password: password,
       }),
     })
-      .then((res) => res.json())
-      .then((res) => {
-        console.log("res", res);
+      .then((response) => response.json())
+      .then((response) => {
+        setData(response);
+        if (response.errors) {
+          alert("Error al iniciar sesión. Inténtelo de nuevo...");
+          localStorage.removeItem("rol");
+        } else {
+          console.log("Datos", data);
+          console.log(response.message);
+          localStorage.setItem("rol", JSON.stringify(data.role));
+        }
       });
+    // .then((json) => console.log(json));
+
+    // navigate("/News");
   };
 
   return (
@@ -35,7 +48,7 @@ const Login = () => {
         <hr></hr>
         <Card className="p-0">
           <div className="form">
-            <Form style={{ width: "20rem" }}>
+            <Form style={{ width: "20rem" }} onSubmit={handleSubmit}>
               <Form.Group className="mb-3 mt-3" controlId="formBasicUser">
                 <Form.Label>Usuario</Form.Label>
                 <Form.Control
@@ -51,9 +64,10 @@ const Login = () => {
                   type="password"
                   placeholder="Ingrese contraseña"
                   required
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </Form.Group>
-              <Button className="button" onClick={(e) => Submit(e)}>
+              <Button className="button" type="submit">
                 Ingresar
               </Button>
             </Form>

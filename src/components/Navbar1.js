@@ -1,9 +1,18 @@
-import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar1 = () => {
+  const navigate = useNavigate();
+  const [role, setRole] = useState(JSON.parse(localStorage.getItem("rol")));
+
+  const logout = () => {
+    localStorage.removeItem("rol");
+    navigate("/");
+  };
+
   return (
     <>
       <Navbar
@@ -34,9 +43,15 @@ const Navbar1 = () => {
               <Nav.Link href="/Contact" className="menu">
                 Contacto
               </Nav.Link>
-              <Nav.Link href="/Login" className="menu">
-                Cuenta
-              </Nav.Link>
+              {role === "user" || role === "admin" ? (
+                <Nav.Link href="" className="menu" onClick={logout}>
+                  Cerrar Sesión
+                </Nav.Link>
+              ) : (
+                <Nav.Link href="/Login" className="menu">
+                  Cuenta
+                </Nav.Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

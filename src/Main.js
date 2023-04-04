@@ -10,14 +10,13 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Register from "./components/Register";
 import Login from "./components/Login";
-import NewDetail from "./components/NewDetail";
+import NewDetailApi from "./components/NewDetailApi";
 
 const Main = () => {
   return (
     <>
       <Container fluid className="px-0 d-flex flex-column min-vh-100">
         <Navbar1 />
-        {/* <Landing /> */}
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/Autism" element={<Autism />} />
@@ -26,7 +25,7 @@ const Main = () => {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Register" element={<Register />} />
-          <Route path="/NewDetail" element={<NewDetail />} />
+          <Route path="/NewDetailApi/:id" element={<NewDetailApi />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
